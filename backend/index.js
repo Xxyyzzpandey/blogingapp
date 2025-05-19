@@ -15,12 +15,6 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 
 // Correcting the CORS origin to allow the entire domain, not just a specific path
 app.use(cors());
-// app.use(cors({
-//   origin: 'https://blogify-mern-4663.vercel.app', // Allowing requests from the front-end origin
-//   methods: 'GET,POST,PUT,DELETE',
-//   allowedHeaders: 'Content-Type,Authorization',
-//   credentials: true // This allows cookies to be sent with requests
-// }));
 
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
