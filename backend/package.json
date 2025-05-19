@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
-  },
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "build": "echo 'No build step defined for backend'"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
